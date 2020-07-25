@@ -30,9 +30,9 @@ https://hotel.testplanisphere.dev/en-US/
 
 * [Checkstyle](https://checkstyle.sourceforge.io/)
 
-### Requirements
+### How to Run
 
-#### 必須環境
+#### Requirements
 
 * JDK 11
 * Google Chrome
