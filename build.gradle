@@ -1,0 +1,52 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+    id 'checkstyle'
+}
+
+version = '2020.6.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+    // Selenide
+    testImplementation 'com.codeborne:selenide:5.13.0'
+
+    // Use JUnit Jupiter API for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+
+    // Use JUnit Jupiter Engine for testing.
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+    // SLF4J Simple binding
+    testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+compileTestJava {
+    options.encoding = "UTF-8"
+}
+
+test {
+    // Use junit platform for unit tests
+    useJUnitPlatform()
+    testLogging {
+        showStandardStreams = true
+    }
+    systemProperty 'selenide.baseUrl', 'https://hotel.testplanisphere.dev'
+    systemProperty 'selenide.browserSize', '1920x1080'
+    if (System.getenv('GITHUB_ACTIONS') == 'true') {
+        systemProperty 'selenide.headless', 'true'
+    }
+}
