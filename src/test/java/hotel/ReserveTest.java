@@ -72,7 +72,7 @@ class ReserveTest {
 
     switchTo().frame("room");
     var roomPage = page(RoomPage.class);
-    roomPage.getHeader().shouldHave(exactText("Standard twin"));
+    roomPage.getHeader().shouldHave(exactText("Standard Twin"));
     switchTo().defaultContent();
   }
 
@@ -109,7 +109,7 @@ class ReserveTest {
 
     switchTo().frame("room");
     var roomPage = page(RoomPage.class);
-    roomPage.getHeader().shouldHave(exactText("Premium twin"));
+    roomPage.getHeader().shouldHave(exactText("Premium Twin"));
     switchTo().defaultContent();
   }
 
