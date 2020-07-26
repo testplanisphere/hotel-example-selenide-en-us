@@ -1,6 +1,6 @@
 # hotel-example-selenide-en-us
 
-
+![selenide-en-us](https://github.com/testplanisphere/hotel-example-selenide-en-us/workflows/selenide-en-us/badge.svg)
 
 This project is example codes for learning test automation.
 
@@ -53,3 +53,6 @@ gradlew.bat clean check
 
 ### Changelog
 
+#### v2020.7.0 (2020-07-26)
+
+* First release
