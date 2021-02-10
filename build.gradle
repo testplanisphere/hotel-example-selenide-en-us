@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     // Selenide
-    testImplementation 'com.codeborne:selenide:5.15.0'
+    testImplementation 'com.codeborne:selenide:5.18.0'
 
     // Use JUnit Jupiter API for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
