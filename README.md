@@ -1,6 +1,6 @@
 # hotel-example-selenide-en-us
 
-![selenide-en-us](https://github.com/testplanisphere/hotel-example-selenide-en-us/workflows/selenide-en-us/badge.svg)
+[![selenide-en-us](https://github.com/testplanisphere/hotel-example-selenide-en-us/actions/workflows/test.yml/badge.svg)](https://github.com/testplanisphere/hotel-example-selenide-en-us/actions/workflows/test.yml)
 
 This project is example codes for learning test automation.
 
@@ -52,6 +52,18 @@ gradlew.bat clean check
 ```
 
 ### Changelog
+
+#### v2021.2.0 (2021-02-28)
+
+* [#18](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/18) Bump selenide from 5.15.0 to 5.18.0
+* [#20](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/20) Bump junit-jupiter-engine from 5.7.0 to 5.7.1
+* [#21](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/21) Bump junit-jupiter-api from 5.7.0 to 5.7.1
+* [#22](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/22) Bump Gradle from 6.6.1 to 6.8.2
+* [#23](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/23) Update cache setting
+* [#24](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/24) Remove jcenter
+* [#25](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/25) Bump selenide from 5.18.0 to 5.18.1
+* [#26](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/26) Bump selenide from 5.18.1 to 5.19.0
+* [#27](https://github.com/testplanisphere/hotel-example-selenide-en-us/pull/27) Bump Gradle from 6.8.2 to 6.8.3
 
 #### v2020.9.0 (2020-09-30)
 
