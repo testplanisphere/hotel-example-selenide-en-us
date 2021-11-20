@@ -4,6 +4,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.SelenideElement;
+import java.time.Duration;
 
 public class ConfirmPage {
 
@@ -42,7 +43,7 @@ public class ConfirmPage {
   public void confirm() {
     $("button[data-target=\"#success-modal\"]").click();
     sleep(2000);
-    $("#success-modal").waitUntil(appears, 10000);
+    $("#success-modal").shouldBe(visible, Duration.ofMillis(10000));
   }
 
   public SelenideElement getModalMessage() {
